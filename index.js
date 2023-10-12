@@ -1,73 +1,67 @@
-'use strict'
-
-// 1 Task//
-
-// const userNames = ["Петрик Ольга Іванівна", "Гнатюк Петро Антонович", "Рудко Андрій Опанасович"];
-
-// // let user1 = userNames[0];
-// // let user2 = userNames[1];
-// // let user3 = userNames[2];
-
-// // const initials = [user2, user1, user3]
-
-// // console.log(initials); // [ "Г.П.А.", "П.О.І.", "Р.А.О."]
+'use stict'
 
 
-//1 task - second try
+// // 1
 
 // const userNames = ["Петрик Ольга Іванівна", "Гнатюк Петро Антонович", "Рудко Андрій Опанасович"];
-// const copyUserNames = userNames.slice();
+// const initials = userNames.map((name)=>{
+//     const arr = name.split(' ');
+//     const innerArr = arr.map((item)=>{
+//         return item[0];
+//        });
+//        const innerStringJoined = innerArr.join('.') + ".";
+//  return innerStringJoined;
+      
+// });
+// const initialsSorted = initials.sort();
 
-// const userName = copyUserNames.map((name, index)=> {
-//     return name + index;
-// })
-
-
-// console.log(copyUserNames) //  и тут я сдался...
+// console.log(initialsSorted)
 
 
 
-// 2 Task
+// //2
 
 // const userNames = ['Петро', 'Емма', 'Юстин', 'Ілля', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена'];
-// let filteredNames = userNames.filter((name) =>{
-//     return name.index === ("А", "Е", "I", "О", "У", "Я");
+// const letters = ["А", "Е", "Є", "И", "І", "Ї", "О", "У", "Ю ", "Я"];
+
+// const filteredNames = userNames.filter((name)=>{
+//     if (letters.includes(name[0])){
+//         return name;
+//     }
 // });
 
 
 
-// console.log(filteredNames); // ['Емма', 'Юстин', 'Ілля', 'Яна', 'Антон', 'Олена']
+// console.log(filteredNames);
 
 
-
-
-// 3 Task//
+// // 3 
 
 // const currentMaxValue = 4589;
-// const arr = [];
-// arr.unshift(currentMaxValue);
-// const copiedArr = arr.slice();
-// const reverseArr = copiedArr.reverse();
+// const newString = currentMaxValue.toString();
 
-// let reverseMaxValue = reverseArr.join();
-// // const reverseMaxValue = number;
+// const spreadArr = newString.split('');
 
+// const reverseArr = spreadArr.reverse();
 
-
-// console.log(reverseMaxValue); // 9854
-// console.log(typeof reverseMaxValue); // 'number'
+// let reverseValue = reverseArr.join('');
+// const reverseMaxValue = parseInt(reverseValue);
 
 
 
 
-// 4 Task
+// console.log(reverseMaxValue);
+// console.log(typeof reverseMaxValue); 
 
+
+// // 4
 
 // const resultsArray = [1, 2, [3, [4]]];
 // const flatArr = resultsArray.flat(Infinity);
-// const mathArr = flatArr.Math((index0 + index1 + index2) * index3);
-// let productOfArray = mathArr.join('');
+
+// let productOfArray = flatArr.reduce ((product, currentValue)=> {
+//     return product * currentValue
+// });
 
 
-// console.log(productOfArray); // 24
-
+// console.log(productOfArray);
