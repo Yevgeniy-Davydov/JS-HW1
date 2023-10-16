@@ -5,12 +5,13 @@
 
 // const userNames = ["Петрик Ольга Іванівна", "Гнатюк Петро Антонович", "Рудко Андрій Опанасович"];
 // const initials = userNames.map((name)=>{
+    
 //     const arr = name.split(' ');
 //     const innerArr = arr.map((item)=>{
 //         return item[0];
 //        });
-//        const innerStringJoined = innerArr.join('.') + ".";
-//  return innerStringJoined;
+//        return innerArr.join('.') + ".";
+  
       
 // });
 // const initialsSorted = initials.sort();
@@ -25,9 +26,7 @@
 // const letters = ["А", "Е", "Є", "И", "І", "Ї", "О", "У", "Ю ", "Я"];
 
 // const filteredNames = userNames.filter((name)=>{
-//     if (letters.includes(name[0])){
-//         return name;
-//     }
+//     return letters.includes(name[0]);
 // });
 
 
@@ -38,15 +37,8 @@
 // // 3 
 
 // const currentMaxValue = 4589;
-// const newString = currentMaxValue.toString();
 
-// const spreadArr = newString.split('');
-
-// const reverseArr = spreadArr.reverse();
-
-// let reverseValue = reverseArr.join('');
-// const reverseMaxValue = parseInt(reverseValue);
-
+// const reverseMaxValue = Number(String(currentMaxValue).split('').reverse().join(''));
 
 
 
